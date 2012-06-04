@@ -29,6 +29,8 @@ As with most Cordova/PhoneGap APIs, functionality is not available until the
 should be included _after_ the `phonegap.js` file.
 
 Call the plugin, specifying subject, text, success function, and failure function
+
+
 	window.plugins.MailTo.show({
     	subject: 'Subject',
     	message: '<b>message</b>',
