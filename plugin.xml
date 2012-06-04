@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.applicationcraft.plugins.MailToPlugin"
+    version="1.0.0">
+
+    <name>MailToPlugin</name>
+    
+    <asset src="www/mailto.js" target="mailto.js" />
+    
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/plugins.xml" parent="/plugins">
+            <plugin name="MailToPlugin"
+                value="com.applicationcraft.plugins.MailToPlugin"/>
+        </config-file>
+
+        <source-file src="src/android/MailToPlugin.java"
+                target-dir="src/com/applicationcraft/plugins" />
+    </platform>
+   
+</plugin>
