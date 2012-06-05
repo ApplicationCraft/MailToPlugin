@@ -1,6 +1,6 @@
 # MailTo plugin for Cordova
 
-This is a prototype of a mail-to plugin for android
+This is a prototype of a mail-to plugin for android and ios
 
 The goal is for a single JavaScript file to be usable on all supported
 platforms, and the native code to be installed in a project through a [separate
@@ -12,6 +12,9 @@ script](http://github.com/alunny/pluginstall)
     -- src
       -- android
         -- MailToPlugin.java
+    -- ios
+        -- MailToPlugin.h
+        -- MailToPlugin.m
     -- www
       -- mailto.js
 
@@ -31,7 +34,7 @@ should be included _after_ the `phonegap.js` file.
 Call the plugin, specifying subject, text, success function, and failure function
 
 
-	window.plugins.MailTo.show({
+	window.plugins.MailTo.mailTo({
     	subject: 'Subject',
     	message: '<b>message</b>',
     	isHtml : true,
@@ -39,7 +42,8 @@ Call the plugin, specifying subject, text, success function, and failure functio
     	ccemails : ["ccmail@gmail.com"],
     	bccemails : ["bccmail@gmail.com"],
     	attachments : ["/sdcard/downloads/test.html"],
-    	chtitle : "Mail To:"},
+    	chtitle : "Mail To:" //Android spec
+    	},
     	function() {}, // Success function
     	function() {alert('Mailto failed')} // Failure function
 	);

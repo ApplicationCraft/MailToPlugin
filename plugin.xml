@@ -19,5 +19,14 @@
         <source-file src="src/android/MailToPlugin.java"
                 target-dir="src/com/applicationcraft/plugins" />
     </platform>
+    
+     <!-- ios -->
+    <platform name="ios">
+        <plugins-plist key="MailToPlugin"
+                    string="MailToPlugin" />
+        <source-file src="MailToPlugin.h" />
+        <source-file src="MailToPlugin.m" />
+        <framework src="MessageUI.framework" />
+    </platform>
    
 </plugin>
