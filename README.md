@@ -4,7 +4,7 @@ This is a prototype of a mail-to plugin for android and ios
 
 The goal is for a single JavaScript file to be usable on all supported
 platforms, and the native code to be installed in a project through a [separate
-script](http://github.com/alunny/pluginstall)
+script](http://github.com/alunny/pluginstall) Now `pluginstall` not correct adding MessageUI.framework, do it manual
 
 ## The Structure
 
