@@ -8,20 +8,14 @@
 	    		fail("Nothing to send");
 			return;
 		}
-		if (content.emails){
-			if (typeof content.emails == "string"){
-				content.emails = [content.emails];
-			}
+		if (typeof content.emails == "string"){
+			content.emails = [content.emails];
 		}
-		if (content.ccemails){
-			if (typeof content.ccemails == "string"){
-				content.ccemails = [content.ccemails];
-			}
+		if (typeof content.ccemails == "string"){
+			content.ccemails = [content.ccemails];
 		}
-		if (content.bccemails){
-			if (typeof content.bccemails == "string"){
-				content.bccemails = [content.bccemails];
-			}
+		if (typeof content.bccemails == "string"){
+			content.bccemails = [content.bccemails];
 		}
 		
 		content.isHtml = (content.isHtml) ? "yes" : "no";
