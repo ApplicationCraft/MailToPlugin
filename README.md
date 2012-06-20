@@ -4,7 +4,8 @@ This is a prototype of a mail-to plugin for android and ios
 
 The goal is for a single JavaScript file to be usable on all supported
 platforms, and the native code to be installed in a project through a [separate
-script](http://github.com/alunny/pluginstall) Now `pluginstall` not correct adding MessageUI.framework, do it manual
+script](http://github.com/alunny/pluginstall) (to install on iOS, 
+you will need pluginstall version 0.3.3 or above)
 
 ## The Structure
 
@@ -50,6 +51,4 @@ Call the plugin, specifying subject, text, success function, and failure functio
 
 ## License
 
-The MIT License
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Apache
